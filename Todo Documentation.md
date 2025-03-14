@@ -33,11 +33,6 @@ Check if all containers are running:
 ```sh
 docker ps
 ```
-Access the application at:
-
-- **Frontend**: ` localhost:80`
-- **Backend**: ` localhost:3000`
-- **Database**: `localhost:27017`
 
 ## 2. Dockerfiles and Docker Compose
 
@@ -76,10 +71,11 @@ docker-compose up --build -d
 | Backend    | 3000 |
 | Database   | 27017 |
 
-### Security Considerations
-- Environment variables are used to store database credentials.
-- The database is not exposed to the public, only accessible within the network.
-- Volumes are used to persist database data.
+Access the application at:
+
+- **Frontend**: ` localhost:80`
+- **Backend**: ` localhost:3000`
+- **Database**: `localhost:27017`
 
 ## 4. Troubleshooting Guide
 
