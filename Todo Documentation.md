@@ -35,8 +35,8 @@ docker ps
 ```
 Access the application at:
 
-- **Frontend**: 'localhost:80'
-- **Backend**: 'localhost:3000'
+- **Frontend**: ` localhost:80`
+- **Backend**: ` localhost:3000`
 - **Database**: `localhost:27017`
 
 ## 2. Dockerfiles and Docker Compose
