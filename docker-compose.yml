@@ -8,6 +8,7 @@ services:
         VITE_BACKEND_URL: http://127.0.0.1:3000
     ports:
       - "80:80"
+    restart: always
     networks:
       - todo-network
     depends_on:
@@ -22,6 +23,7 @@ services:
       - MONGO_URI=mongodb://db:27017
     ports:
       - "3000:3000"
+    restart: always
     networks:
       - todo-network
     depends_on:
@@ -31,9 +33,14 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
+    restart: always  
     networks:
       - todo-network
+    volumes:
+      - mongo_data:/data/db  # Persist MongoDB data  
 
 networks:
   todo-network:
-    
+volumes:
+  mongo_data:
+   
