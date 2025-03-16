@@ -40,8 +40,7 @@ docker ps
 Each application component (Frontend, Backend, and Database) has its own Dockerfile:
 
 - **Frontend Dockerfile**: Uses a multi-stage build with Node.js to install dependencies and serve the React app with Nginx.
-- **Backend Dockerfile**: Uses Python/Node.js to install dependencies, run migrations, and start the backend service.
-- **Database Dockerfile**: Uses an official MongoDB image, preconfiguring environment variables for database setup.
+- **Backend Dockerfile**: Uses Node.js to install dependencies, and start the backend service.
 
 Each Dockerfile defines necessary dependencies, exposes required ports, and optimizes the build process.
 
