@@ -32,7 +32,6 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection URI
-//const MONGO_URI = 'mongodb+srv://natigodgift:<password>@db-for-mern-stack.nwxko09.mongodb.net/';
 const MONGO_URI = `${process.env.MONGO_URI}`;
 
 const dbname = 'todo';
